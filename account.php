@@ -35,7 +35,7 @@
 
 <html>
 	<head>
-		<title>Account settings page</title>
+		<title>Account Settings</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -139,7 +139,7 @@
 				<div class="acc">
 					<div class="acc-heading">
 						<h2>Account</h2>
-						<h3>Change your basic account settings.</h3>
+						<h3>Manage Account Settings.</h3>
 					</div>
 					<div class="acc-content">
 					<form method="POST">
