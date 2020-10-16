@@ -1,2 +1,4 @@
-# TwitterCode
-This is a twitter clone.This is made as a learning project.
+
+
+## The only difference is that you can tweet code! 
+
