@@ -34,7 +34,7 @@
 <!DOCTYPE HTML> 
  <html>
 	<head>
-		<title>Twitter</title>
+		<title>Code-Tweeter</title>
 		  <meta charset="UTF-8" />
 		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>  
  	  	  <link rel="stylesheet" href="assets/css/style-complete.css"/> 
@@ -137,7 +137,7 @@
 						</div>
 						<div class="num-box">
 							<div class="num-head">
-								FOLLOWERS
+								YOUR FOLLOWERS
 							</div>
 							<div class="num-body">
 								<span class="count-followers"><?php echo $user->followers;?></span>
