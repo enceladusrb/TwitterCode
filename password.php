@@ -62,6 +62,7 @@
 				<li><input type="text" placeholder="Search" class="search"/><i class="fa fa-search" aria-hidden="true"></i></li>
 				<div class="nav-right-down-wrap">
 					<ul class="search-result">
+					
 					</ul>
 				</div>
  				<li class="hover"><label class="drop-label" for="drop-wrap1"><img src="<?php echo BASE_URL.$user->profileImage; ?>"/></label>
@@ -84,8 +85,8 @@
  
 	</div>
 
-</div>
-</div>
+</div><!-- nav container ends -->
+</div><!-- header wrapper end -->
 		
 	<div class="container-wrap">
 
@@ -129,7 +130,7 @@
 				</div>
 
 			</div>
-		</div><!--LEFTER ends here now start another sting-->
+		</div><!--LEFTER ENDS-->
 	
 	<div class="righter">
 		<div class="inner-righter">
