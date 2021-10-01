@@ -10,6 +10,10 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
 		<link rel="stylesheet" href="assets/css/style-complete.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+		<link rel="stylesheet" href="assets/css/style-complete.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+		<link rel="stylesheet" href="assets/css/style-complete.css"/>
 	</head>
 	<!--Helvetica Neue-->
 <body>
@@ -27,6 +31,12 @@
 			
 			<div class="nav-left">
 				<ul>
+					<li><i class=" Logo here " aria-hidden="true"></i><a href="#">Home</a></li>
+					<li><a href="#"> About </a></li>
+					<li><i class=" Logo here " aria-hidden="true"></i><a href="#">Home</a></li>
+					<li><a href="#"> About </a></li>
+					<li><i class=" Logo here " aria-hidden="true"></i><a href="#">Home</a></li>
+					<li><a href="#"> About </a></li>
 					<li><i class=" Logo here " aria-hidden="true"></i><a href="#">Home</a></li>
 					<li><a href="#"> About </a></li>
 				</ul>
@@ -69,7 +79,7 @@
 			<!-- SIGN UP wrapper end -->
 
 		</div><!-- content right ends -->
-
+              
 	</div><!-- main container end -->
 
 </div><!-- inner wrapper ends-->
