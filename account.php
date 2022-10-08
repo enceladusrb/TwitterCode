@@ -51,11 +51,7 @@
   <!-- Nav -->
    <div class="nav">
 		 <div class="nav-left">
-			<ul>
-				<li><a href="<?php echo BASE_URL;?>home.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
- 				<li><a href="<?php echo BASE_URL;?>i/notifications"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a></li>
-				<li id="messagePopup" rel="user_id"><i class="fa fa-envelope" aria-hidden="true"></i>Messages</li>
- 			</ul>
+	
 		</div>
 		<!-- nav left ends-->
 		<div class="nav-right">
@@ -71,6 +67,21 @@
 				<div class="drop-wrap">
 					<div class="drop-inner">
 						<ul>
+							<li><a href="<?php echo BASE_URL.$user->username; ?>"><?php echo $user->username; ?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
+						</ul>
+												<ul>
+							<li><a href="<?php echo BASE_URL.$user->username; ?>"><?php echo $user->username; ?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
+						</ul>
+												<ul>
+							<li><a href="<?php echo BASE_URL.$user->username; ?>"><?php echo $user->username; ?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
+						</ul>
+												<ul>
 							<li><a href="<?php echo BASE_URL.$user->username; ?>"><?php echo $user->username; ?></a></li>
 							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
 							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
