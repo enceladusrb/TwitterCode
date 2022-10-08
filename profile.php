@@ -206,7 +206,49 @@
 </div>
 
 	 </div>
-	<!--PROFILE INFO INNER END-->
+			<div class="nav-right">
+			<ul>
+				<li><input type="text" placeholder="Search" class="search"/><i class="fa fa-search" aria-hidden="true"></i>
+					<div class="search-result"> 			
+					</div>
+				</li>
+
+				<li class="hover"><label class="drop-label" for="drop-wrap1"><img src="<?php echo BASE_URL.$user->profileImage;?>"/></label>
+				<input type="checkbox" id="drop-wrap1">
+				<div class="drop-wrap">
+					<div class="drop-inner">
+						<ul>
+							<li><a href="<?php echo BASE_URL.$user->username;?>"><?php echo $user->username;?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li><label for="pop-up-tweet" class="addTweetBtn">Tweet</label></li>
+			</ul>
+		</div><!-- nav right ends-->		<div class="nav-right">
+			<ul>
+				<li><input type="text" placeholder="Search" class="search"/><i class="fa fa-search" aria-hidden="true"></i>
+					<div class="search-result"> 			
+					</div>
+				</li>
+
+				<li class="hover"><label class="drop-label" for="drop-wrap1"><img src="<?php echo BASE_URL.$user->profileImage;?>"/></label>
+				<input type="checkbox" id="drop-wrap1">
+				<div class="drop-wrap">
+					<div class="drop-inner">
+						<ul>
+							<li><a href="<?php echo BASE_URL.$user->username;?>"><?php echo $user->username;?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li><label for="pop-up-tweet" class="addTweetBtn">Tweet</label></li>
+			</ul>
+		</div><!-- nav right ends-->
 
 	</div>
 	<!--PROFILE INFO WRAPPER END-->
