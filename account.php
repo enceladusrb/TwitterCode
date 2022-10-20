@@ -1,37 +1,4 @@
-<?php 
-   include 'core/init.php';
-   $user_id = $_SESSION['user_id'];
-   $user = $getFromU->userData($user_id);
 
-   if($getFromU->loggedIn()===false){
-      header('Location: '.BASE_URL.'index.php');
-   }
-
-   if(isset($_POST['submit'])){
-   	 $username = $getFromU->checkInput($_POST['$username']);
-   	 $email    = $getFromU->checkInput($_POST['$email']);
-     $error    = array();
-
-	    if(!empty($username) and !empty($email)){
-            if($user->$username != $username and $getFromU->checkUsername($username) === true){
-                $error['username'] = "username all ready exist";
-            }else if(preg_match("/[^a-zA-Z0-9\!]", $username)){
-              $error['username'] = "Only Chars and No.s allowed";
-            }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                 $error['$email'] = "Invalid Email";
-            }else if($user->$email != $email and $getFromU->checkEmail($email) === true){
-                 $error['$email'] ="Email already In use";
-
-            }else{
-            	$getFromU->update('users', $user_id, array('username' => $username, 'email' => $email));
-            	header('Location: '.BASE_URL.'settings/account');
-            }
-	    }else{
-	    	$error['fields'] = "All fields are nedded";
-	    }
-
-   }
-?>
 
 <html>
 	<head>
@@ -230,3 +197,37 @@
 
 </html>
 <!--pls ignore this comment-->
+<?php 
+   include 'core/init.php';
+   $user_id = $_SESSION['user_id'];
+   $user = $getFromU->userData($user_id);
+
+   if($getFromU->loggedIn()===false){
+      header('Location: '.BASE_URL.'index.php');
+   }
+
+   if(isset($_POST['submit'])){
+   	 $username = $getFromU->checkInput($_POST['$username']);
+   	 $email    = $getFromU->checkInput($_POST['$email']);
+     $error    = array();
+
+	    if(!empty($username) and !empty($email)){
+            if($user->$username != $username and $getFromU->checkUsername($username) === true){
+                $error['username'] = "username all ready exist";
+            }else if(preg_match("/[^a-zA-Z0-9\!]", $username)){
+              $error['username'] = "Only Chars and No.s allowed";
+            }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                 $error['$email'] = "Invalid Email";
+            }else if($user->$email != $email and $getFromU->checkEmail($email) === true){
+                 $error['$email'] ="Email already In use";
+
+            }else{
+            	$getFromU->update('users', $user_id, array('username' => $username, 'email' => $email));
+            	header('Location: '.BASE_URL.'settings/account');
+            }
+	    }else{
+	    	$error['fields'] = "All fields are nedded";
+	    }
+
+   }
+?>
