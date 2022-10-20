@@ -1,9 +1,4 @@
-<?php
-   include 'core/init.php';
-   if(isset($_SESSION['user_id'])){
-        header('Location: home.php');
-   }
-?>
+
 <html>
 	<head>
 		<title>Twitter</title>
@@ -86,3 +81,9 @@
 </div><!-- ends wrapper -->
 </body>
 </html>
+<?php
+   include 'core/init.php';
+   if(isset($_SESSION['user_id'])){
+        header('Location: home.php');
+   }
+?>
